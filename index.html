@@ -4,111 +4,201 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Trần Phi Thắng</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <!-- Header -->
-    <header class="bg-primary text-white text-center py-5">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <h1>Trần Phi Thắng</h1>
-            <p class="lead">Lập trình viên trẻ đến từ Long An | GPA 3.47 | TOEIC 825</p>
+            <a class="navbar-brand" href="#intro">Trần Phi Thắng</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Học vấn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Kỹ năng</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Đồ án</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="intro" class="text-center bg-dark text-light py-5">
+        <div class="container">
+            <h3 class="rotating-text"></h3>
         </div>
     </header>
+    
 
-    <!-- Main Content -->
-    <main>
-        <!-- About Section -->
-        <section id="about" class="py-5">
-            <div class="container">
-                <h2 class="text-center text-primary mb-4">Giới thiệu</h2>
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <p>Mình sinh năm 2004, quê tại Long An. Hiện đang học tại Trường Đại học Sư phạm Kỹ thuật TP.HCM (SPKT). Với niềm đam mê lập trình và công nghệ, mình luôn không ngừng học hỏi để nâng cao kỹ năng.</p>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="https://avatars.githubusercontent.com/u/152299575?v=4" alt="Trần Phi Thắng" class="rounded-circle img-fluid">
-                    </div>
+    <!-- About -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container section-animate">
+            <h2 class="text-center mb-4">Giới thiệu</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h5>Mình sinh năm 2004, sinh ra và lớn lên tại Long An. Hiện mình đang học tại Trường Đại học Sư phạm Kỹ thuật TP.HCM. 
+                    Với niềm đam mê lập trình và công nghệ, mình luôn không ngừng học hỏi để nâng cao kỹ năng.</h5>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="https://scontent.fsgn10-1.fna.fbcdn.net/v/t39.30808-1/459288124_1228520461514104_696641437062623709_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=fqL4-Q6tXL0Q7kNvgEK0dD9&_nc_zt=24&_nc_ht=scontent.fsgn10-1.fna&_nc_gid=AiE8cPGhTO5ATncGh2_nkKH&oh=00_AYD1jGDBtjY5RZnCBCSpzskZ9LA1Ab77ohlTyljbKgUa3w&oe=67730846" alt="Trần Phi Thắng" class="img-fluid rounded-circle shadow">
                 </div>
             </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="bg-light py-5">
-            <div class="container">
-                <h2 class="text-center text-primary mb-4">Kỹ năng</h2>
-                <div class="row">
-                    <div class="col-md-4 text-center">
-                        <div class="skill-item">
-                            <h3 class="text-primary">Lập trình</h3>
-                            <p>Java, Python, Spring Boot</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div class="skill-item">
-                            <h3 class="text-primary">Web Development</h3>
-                            <p>HTML, CSS, JavaScript, Bootstrap</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div class="skill-item">
-                            <h3 class="text-primary">Database</h3>
-                            <p>MySQL, SQL Server</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="py-5">
-            <div class="container">
-                <h2 class="text-center text-primary mb-4">Dự án</h2>
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title text-primary">Dự án 1</h3>
-                                <p class="card-text">Mạng xã hội thu nhỏ, bao gồm các chức năng nhắn tin, kết bạn, và quản lý bài viết.</p>
-                                <a href="https://github.com/pthngws" target="_blank" class="btn btn-primary">Xem chi tiết</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title text-primary">Dự án 2</h3>
-                                <p class="card-text">Website bán laptop với giao diện đẹp và tính năng quản lý sản phẩm.</p>
-                                <a href="https://github.com/pthngws" target="_blank" class="btn btn-primary">Xem chi tiết</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="bg-light py-5">
-            <div class="container">
-                <h2 class="text-center text-primary mb-4">Liên hệ</h2>
-                <p class="text-center">Hãy liên hệ với mình qua email:</p>
-                <p class="text-center"><a href="mailto:pthngws@gmail.com" class="text-primary">pthngws@gmail.com</a></p>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-primary text-white text-center py-3">
-        <div class="container">
-            <p>© 2024 Trần Phi Thắng. All rights reserved.</p>
         </div>
-    </footer>
+    </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
+    <!-- Education -->
+    <section id="education" class="py-5">
+        <div class="container section-animate">
+            <h2 class="text-center mb-4">Học vấn</h2>
+            <div class="row">
+                <!-- Trường -->
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body d-flex align-items-center">
+                            <i class="fa-solid fa-school fa-2x me-3"></i> <!-- School Icon -->
+                            <div>
+                                <h5 class="card-title">Trường</h5>
+                                <p class="card-text">Đại học Sư phạm Kỹ thuật TP.HCM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Chuyên ngành -->
+                <div class="col-md-3 mb-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body d-flex align-items-center">
+                            <i class="fa-solid fa-laptop-code fa-2x me-3"></i> <!-- Laptop Code Icon -->
+                            <div>
+                                <h5 class="card-title">Chuyên ngành</h5>
+                                <p class="card-text">Công nghệ phần mềm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Thời gian -->
+                <div class="col-md-3 mb-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body d-flex align-items-center">
+                            <i class="fa-solid fa-calendar fa-2x me-3"></i> <!-- Calendar Icon -->
+                            <div>
+                                <h5 class="card-title">Thời gian</h5>
+                                <p class="card-text">2022-2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- GPA -->
+                <div class="col-md-2 mb-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body d-flex align-items-center">
+                            <i class="fa-solid fa-graduation-cap fa-2x me-3"></i> <!-- Graduation Cap Icon -->
+                            <div>
+                                <h5 class="card-title">GPA</h5>
+                                <p class="card-text">3.47</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Skills -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container section-animate">
+            <h2 class="text-center mb-4">Kỹ năng</h2>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <i class="fa-solid fa-code fa-2x mb-2"></i>
+                    <h5>Lập trình</h5>
+                    <p>HTML, CSS, JavaScript, Java, C#</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fa-solid fa-tools fa-2x mb-2"></i>
+                    <h5>Công cụ</h5>
+                    <p>Git, Docker, Postman</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fa-solid fa-lightbulb fa-2x mb-2"></i>
+                    <h5>Soft Skills</h5>
+                    <p>Giao tiếp, quản lý thời gian</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fa-solid fa-globe fa-2x mb-2"></i>
+                    <h5>Chứng chỉ</h5>
+                    <p>Toeic 825</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Projects -->
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Đồ án</h2>
+        <div class="timeline">
+            <!-- Project 1 -->
+            <div class="timeline-item">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content">
+                    <h5 class="card-title">Mạng xã hội</h5>
+                    <p class="card-text">Dự án xây dựng nền tảng mạng xã hội.</p>
+                    <p><strong>Công nghệ sử dụng:</strong> Spring Boot, MySQL,Boostrap, HTML, CSS, JavaScript, Cloudinary, JWT, WebSocket</p>
+                    <p><strong>Thời gian hoàn thành:</strong>01/2025</p>
+                    <p><strong>Mô tả:</strong> Dự án này là một nền tảng mạng xã hội với chức năng nhắn tin, kết bạn và chia sẻ bài viết.</p>
+                    <a href="https://github.com/pthngws" class="btn btn-primary">Xem trên GitHub</a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="timeline-item">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content">
+                    <h5 class="card-title">Website bán laptop</h5>
+                    <p class="card-text">Dự án thiết kế website thương mại điện tử.</p>
+                    <p><strong>Công nghệ sử dụng:</strong> Spring Boot, MySQL, HTML, CSS, JavaScript, JWT</p>
+                    <p><strong>Thời gian hoàn thành:</strong>12/2024</p>
+                    <p><strong>Mô tả:</strong> Website cho phép người dùng tìm kiếm và mua laptop trực tuyến, tích hợp các phương thức thanh toán và giỏ hàng.</p>
+                    <a href="https://github.com/pthngws" class="btn btn-primary">Xem trên GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-dark text-light">
+    <div class="container text-center">
+        <h2 class="mb-4">Liên hệ</h2>
+        <p>Email: <a href="mailto:pthngws@gmail.com" >pthngws@gmail.com</a></p>
+        
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="https://facebook.com/pthngws" target="_blank" class="social-icon">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://zalo.me/yourprofile" target="_blank" class="social-icon">
+                <i class="fa-brands fa-weixin fa-2x"></i> <!-- Weixin as a substitute for Zalo -->
+            </a>
+            <a href="https://github.com/pthngws" target="_blank" class="social-icon">
+                <i class="fa-brands fa-github fa-2x"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
